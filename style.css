@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.html{
+    scroll-behavior: smooth;
+}
+body{
+    color: #fff;
+    /* color: black; */
+    background: rgba(0, 120, 120);
+    /* background: rgb(0, 116, 112); */
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.header-left{
+    flex-basis: 40%;
+
+}
+.header-left img{
+    width: 480px;
+    height: 500px;
+    margin-top: 10px;
+       
+}
+.header-right{
+    flex-basis: 50%;
+    font-size: 35px;
+}
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:0 70px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(205, 245, 245);
+    border-radius: 20px;
+    margin-top: 2px;
+    
+}
+
+.logo{
+    width: 180px;
+    height: 42px;
+    font-size: 16px;
+    margin-left: 40px;
+    color: aqua;
+    /* border-radius: 10px; */
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content:' ';
+    width:0;
+    height: 5px;
+    background: rgb(0, 85, 85);
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+width: 100%;
+}
+.header-text{
+    margin-top: 15%;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 50%;
+}
+.header-right h3{
+    font-size: 40px;
+    margin-top: 25%;
+    line-height: 60px;
+}
+.header-right a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(6, 94, 94);
+}
+.header-right div{
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.btn2{
+    border-radius: 2px;
+    background: aqua;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.header-right span{
+    color: rgb(99, 255, 255);
+}
+/*-----about me----------*/
+.about{
+    padding: 80px 0;
+    color:#ababab;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin:0 70px;
+}
+.about-col-2{
+    flex-basis: 35%;
+}
+.about-col-2 img{
+        width: 250px;
+        height: 300px;
+        border-radius: 60px;
+        /* padding-right: 30%; */
+        /* margin-right: 30px; */
+        margin-left: 40px;
+}
+.about-col-1{
+    flex-basis: 60%;
+    /* padding-left: 10%; */
+    font-size: 19px;
+    line-height: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sub-title{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+.sub-title.contact{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.qualities h3{
+    padding-left: 80px;;
+}
+.qualities table{
+    padding: 10px 40px;
+    border-spacing: 40px;
+    font-size: 18px;
+    line-height: 25px;
+}
+.qualities table th{
+    font-size: 20px;
+}
+.sub-title.abt{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+/*-----skills------------*/
+#skills{
+    padding :30px 0;
+}
+.skillset{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+    /* line-height: 20px; */
+    margin-right: 30px;
+    margin-left: 30px;
+
+}
+.sub-title.skill{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    padding-left: 30px;
+}
+
+.skillset div{
+    background: rgb(199, 255, 255);
+    padding: 40px;
+    /* margin:0 10px; */
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.3s;
+}
+.skillset div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #222121;
+}
+.skillset div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: #222121;
+}
+.skillset div a{
+    text-decoration: none;
+    color:black;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.skillset div p{
+    color: #222121;
+    font-size: 16px;
+    line-height: 20px;
+}  
+.skillset div:hover{
+    background-color: rgb(70, 255, 255);
+    transform: translatey(20px);
+}
+/*-----projects------------*/
+#projetcs{
+    padding: 50px 0;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+    /* line-height: 20px; */
+    margin-right: 30px;
+    margin-left: 40px;
+}
+.sub-title.proj{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    /* width: 100%; */
+    border-radius: 10px;
+    display: block;
+    width: 350px;
+    height: 400px;
+    /* transition: transform 0.5s; */
+}
+.layer{
+    width: 350px;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),rgb(130, 234, 234));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 40px;
+    font-size: 14px;
+    transition: height 1s;
+}
+.layer h3{
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.layer p{
+    font-size: 17px;
+}
+.layer a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 50px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+/* .project:hover img{
+    transform: scale(1.1);
+} */
+.project:hover .layer{
+    height: 400px;
+}
+/*-----contact------------*/
+#contact{
+    margin: 40px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+    padding-right: 100px;
+
+}
+
+.row-left p{
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+}
+
+.contact-left p i{
+    color: aqua;
+    margin-right: 15px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+
+.social-icons{
+    margin-top:30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color:aqua;
+    transform: translateY(-5px);
+}
+
+.btn{
+    display: inline-block;
+    background:aqua;
+    margin-left: 200px;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.contact-right form{
+    width:100%;
+
+}
+
+form input,form textarea{
+    width: 100%;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    color:black;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    background:#acded7;
+}
+
+/* css for small screen */
+@media only screen and (max-width: 600px){
+    /* #header{
+        background-image:url(images/myimgphone.jpg) ;
+    } */
+    .header-left img{
+        width: 300px;
+        height: 380px;
+        margin-top: 25px;
+        /* margin-right: 2000px; */
+        margin-left: -30px;
+           
+    }
+    .layer{
+        width: 306px;
+    }
+    .row{
+        margin:0 70px;
+        display: block;
+    }
+    .contact-left{
+        flex-basis: 100%;
+        width: 180%;
+        margin-left: -70px;
+    }
+    .sub-title.contact{
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+    }
+    .contact-right{
+        flex-basis: 100%;
+        /* padding-right: 100px; */
+        width: 250%;
+        margin-left: -70px;
+    
+    }
+    .contact-left p i{
+        color: aqua;
+        margin-right: 15px;
+        font-size: 25px;
+        margin-top: 20px;
+    }    
+    .btn{
+        display: inline-block;
+        background:aqua;
+        margin-left: 90px;
+        height: 40px;
+        width: 100px;
+        border-radius: 20px;
+    }
+    
+    .contact-right form{
+    }
+    .contact-right h3{
+        margin-top: 20px;
+    }
+    
+    .header-right h3{
+        /* flex-basis: 50%; */
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .header-right {
+       
+        margin-left: -20px;
+    }
+
+    .btn2{
+        border-radius: 2px;
+        background: aqua;
+        display: inline-block;
+        padding: 10px 20px;
+    }
+    #about{
+        margin-top: 250px;
+        margin-left: -30px;
+    }
+    .about-col-2 img{
+        width: 250px;
+        height: 300px;
+        border-radius: 60px;
+        /* padding-right: 30%; */
+        /* margin-right: 30px; */
+        margin-left: 25px;
+        margin-top: 30px;
+}
+.qualities table{
+    padding: 10px 40px;
+    border-spacing: 40px;
+    font-size: 18px;
+    line-height: 25px;
+    display:
+}
+/* .qualities table th{
+    font-size: 20px;
+    float: left;
+    margin-top: 10px;
+}
+.qualities table td{
+    font-size: 20px;
+    float: left;
+    margin-top: 20px;
+} */
+.qualities table {
+    /* display: */
+}
+} 
